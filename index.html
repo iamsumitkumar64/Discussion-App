@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>Discussion App</header>
+    <main>
+        <div id="left-panel">
+            <div id="left-header">
+                <button id="new-entry-btn">New Entry</button>
+                <input type="text" id="search" placeholder="search">
+            </div>
+            <div id="entry-list"></div>
+        </div>
+        <div id="right-panel">
+            <div id="entry-form">
+                <form id="new-question-form">
+                    <input type="text" id="subject-input" required placeholder="Subject">
+                    <textarea id="question-input" rows="5" required placeholder="Question"></textarea>
+                    <button type="button" id="submit-question-btn">Submit</button>
+                </form>
+            </div>
+            <div id="response-area">
+                <div id="response-title">
+                    <div id="response-t-p">
+                        <p id="subject-display"></p>
+                        <p id="ques-display"></p>
+                    </div>
+                    <button id="resolvebtn">Resolve</button>
+                </div>
+                <div id="response-form">
+                    <form id="new-response-form">
+                        <input type="text" id="name-input" required placeholder="Name">
+                        <textarea id="response-input" rows="5" required placeholder="Response"></textarea>
+                        <button type="button" id="submit-response-btn">Response</button>
+                    </form>
+                </div>
+                <p id="response-label">Response</p>
+                <div id="response-list"></div>
+            </div>
+        </div>
+    </main>
+    <footer>Birwal 2025 @ CopyRight</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
