@@ -176,12 +176,12 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     * {
         font-size: 2vmax;
     }
 
-    #app-main {
+    main {
         flex-direction: column-reverse;
         align-items: center;
         gap: 5vmax;
