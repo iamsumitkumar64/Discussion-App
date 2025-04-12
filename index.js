@@ -70,7 +70,7 @@ btn[2].addEventListener("click", (e) => {
     data = data.filter(elem => elem.question !== questionDisplay.innerText && elem.subject !== subjectDisplay.innerText);
     document.getElementById('response-area').style.display = "none";
     document.getElementById('response-list').innerHTML = '';
-    adddiv();
+    adddiv(data);
 });
 
 btn[3].addEventListener("click", submitResponse);
