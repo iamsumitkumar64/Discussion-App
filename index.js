@@ -139,7 +139,7 @@ function createresponse(obj) {
     const responseList = document.getElementById('response-list');
     let responseDiv = document.createElement('div');
     responseDiv.setAttribute('data-response-index', currentIndex);
-    responseDiv.setAttribute('style', `max-width:100%;overflow:scroll;padding:1vmax; border-radius: 1vmax;margin-top:.5vmax; border:1px solid white;order:-${currentIndex};`);
+    responseDiv.setAttribute('style', `max-width:100%;overflow:scroll;padding:1vmax; border-radius: 1vmax;margin-top:.5vmax; border:1px solid white;order:${currentIndex};`);
 
     let responderNamePara = document.createElement('p');
     responderNamePara.id = "p1";
