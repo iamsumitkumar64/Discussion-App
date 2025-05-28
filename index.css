@@ -1,16 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     font-weight: bold;
     scrollbar-width: none;
     box-sizing: border-box;
-    transition: all ease .5s;
+    transition: all ease .3s;
     word-wrap: break-word;
 }
 
 body {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 254, 254);
     background-color: rgb(50, 50, 50);
     padding: .2vmax;
 }
@@ -35,8 +35,9 @@ textarea {
     width: 100%;
     min-height: 5vh;
     border-radius: 1vmax;
-    color: rgb(3, 3, 3);
-    background-color: rgb(216, 214, 214);
+    color: rgb(255, 196, 0);
+    background-color: rgb(94, 94, 94);
+    border: 1px solid white;
     padding: 1vmax;
 }
 
@@ -45,7 +46,7 @@ input {
 }
 
 ::placeholder {
-    color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
     font-size: 2vmax;
     pointer-events: none;
 }
@@ -54,7 +55,7 @@ input:hover::placeholder,
 input:focus::placeholder,
 textarea:hover::placeholder,
 textarea:focus::placeholder {
-    color: transparent;
+    color: rgb(229, 255, 0);
 }
 
 #left-panel,
@@ -88,6 +89,15 @@ textarea:focus::placeholder {
 
 #response-area {
     display: none;
+}
+
+#response-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#response-list>div:hover {
+    background-color: rgb(78, 78, 78);
 }
 
 #entry-form,
@@ -142,14 +152,14 @@ textarea:focus::placeholder {
 
 button {
     max-height: 7vmax;
-    padding: .5vmax;
     color: rgb(0, 64, 255);
     background-color: rgb(255, 255, 255);
-    padding: 1vmax;
+    padding: .5vmax;
     border-radius: 1vmax;
 }
 
-button:hover {
+button:hover,
+button:focus {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 64, 255);
     outline: none;
@@ -165,20 +175,36 @@ footer {
     border-top: 3px solid rgb(179, 255, 0);
 }
 
+#entry-list>div {
+    display: flex;
+    justify-content: space-between;
+}
+
 #p1 {
-    color: yellow;
+    color: rgb(251, 255, 0);
     font-size: 1.5em;
     font-weight: bold;
 }
 
 #p2 {
-    font-size: 1em;
+    text-shadow: 0 0 1vmax rgb(0, 0, 0);
+    font-size: 1.2em;
     text-align: center;
+}
+
+.highlight {
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.time_portion {
+    color: rgb(255, 208, 0);
 }
 
 @media (max-width: 650px) {
     * {
-        font-size: 2vmax;
+        font-size: 1.8vmax;
     }
 
     main {
@@ -191,9 +217,5 @@ footer {
     #right-panel {
         width: 95%;
         height: auto;
-    }
-
-    button {
-        padding: 1vmax;
     }
 }
